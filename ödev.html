@@ -8,6 +8,7 @@
                 background-color: rgb(17, 177, 218);
                 font-family: cursive;
             }
+               
             .carimg{
                 border: solid purple;
             }
@@ -15,7 +16,8 @@
                 background-color: tomato;
                 font: size 40px;
                 text-align:center;
-                margin-right: 20px;               
+                margin-right: 20px;  
+                       
                 }
             #scene{
                 margin-left:50px;
@@ -24,8 +26,9 @@
            #italic{
                font-style: italic;
                font-weight: bolder;
-           }              
-           #pbugatti{
+           }      
+                   
+           #pbugatti, #pagera, #pvenom, #pmclaren, #psaleen{
             width: 50%;
             background-color:grey;
             overflow:auto;
@@ -34,7 +37,7 @@
             float: left;         
            }
 
-           #tbugatti{
+           #tbugatti,#tagera, #tvenom, #tmclaren, #tsaleen{
                border:3px solid red ;
                text-align: center;
                width: 45%;
@@ -42,121 +45,39 @@
                margin-right:10px;
                float:right;                         
            }
-            #bugatti1{
+            #bugatti1,#agera1, #venom1, #mclaren1, #saleen1{
                 float: left;
                 margin-right:6px;
                 margin-bottom:6px;
             }
-            #pagera{
-            width: 50%;
-            background-color:grey;
-            overflow:auto;
-            height: 300px;
-            border: 6px solid;   
-            float: left;         
-           }
-
-           #tagera{
-               border:3px solid red ;
-               text-align: center;
-               width: 45%;
-               background-color: lightcyan;
-               margin-right:10px;
-               float:right;                         
-           }
-            #agera1{
-                float: left;
-                margin-right:6px;
-                margin-bottom:6px;
-            }
-            #pvenom{
-            width: 50%;
-            background-color:grey;
-            overflow:auto;
-            height: 300px;
-            border: 6px solid;   
-            float: left;         
-           }
-
-           #tvenom{
-               border:3px solid red ;
-               text-align: center;
-               width: 45%;
-               background-color: lightcyan;
-               margin-right:10px;
-               float:right;                         
-           }
-            #venom1{
-                float: left;
-                margin-right:6px;
-                margin-bottom:6px;
-            }
-            #pmclaren{
-            width: 50%;
-            background-color:grey;
-            overflow:auto;
-            height: 300px;
-            border: 6px solid;   
-            float: left;         
-           }
-
-           #tmclaren{
-               border:3px solid red ;
-               text-align: center;
-               width: 45%;
-               background-color: lightcyan;
-               margin-right:10px;
-               float:right;                         
-           }
-            #mclaren1{
-                float: left;
-                margin-right:6px;
-                margin-bottom:6px;
-            }
-            #psaleen{
-            width: 50%;
-            background-color:grey;
-            overflow:auto;
-            height: 300px;
-            border: 6px solid;   
-            float: left;         
-           }
-
-           #tsaleen{
-               border:3px solid red ;
-               text-align: center;
-               width: 45%;
-               background-color: lightcyan;
-               margin-right:10px;
-               float:right;                         
-           }
-            #saleen1{
-                float: left;
-                margin-right:6px;
-                margin-bottom:6px;
-            }
+            
             #click{
                 background-color:lightcyan
             }
         </style>
-
+            <!--Instead of different id's of 5 car, they could all be gathered under one class. However, I chose to do this.-->
 
     </head>
     <body>
+        
+       
         <div id="scene">
-        <h1><strong><em>MOST FASTEST 5 CARS</em></strong></h1>
+        <div align="center"><h1><strong><em>MOST FASTEST 5 CARS</em></strong></h1>
         <img class="carimg" src="https://upload.wikimedia.org/wikipedia/commons/6/63/FoS20162016_0624_132444AA_%2827785299372%29.jpg" alt="BUGATTI CHIRON" title="BUGATTI CHIRON SUPER SPORT 300" style="width:1230px;height:800px"></br>
+       <!-- I made the photo of the fastest car on the list the biggest and listed the others below. -->
         <img class="carimg" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Koenigsegg_Agera_R.jpg" alt="KOENIGSEGG AGERA RS" title="KOENIGSEGG AGERA RS" style="width:300px;height:300px">
         <img class="carimg" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Hennessey_Venom_GT_%2816040233465%29.jpg" alt="HENNESSEY VENOM GT" title="HENNESSEY VENOM GT" style="width:300px;height:300px">
         <img class="carimg"src="https://upload.wikimedia.org/wikipedia/commons/3/35/McLaren_Speedtail_Genf_2019_1Y7A5636.jpg" alt="MCLAREN SPEEDTAIL" title="MCLAREN SPEEDTAIL" style="width:300px;height:300px">
         <img class="carimg" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/SAG2004_181_Saleen.jpg" alt="SALEEN S7" title="SALEEN S7" style="width:300px;height:300px">
-        </div>
+        <!--When the mouse comes on the pictures, the brands of the cars appear-->
+        </div> </div>
         <ol id="italic">
             <li><a href="#pbugatti">BUGATTI CHIRON SUPER SPORT 300</a></li>
             <li><a href="#pagera">KOENIGSEGG AGERA RS</a></li>
             <li><a href="#pvenom">HENNESSEY VENOM GT</a></li>
             <li><a href="#pmclaren">MCLAREN SPEEDTAIL</a></li>
             <li><a href="#psaleen">SALEEN S7</a></li>
+
         </ol>
         <h2 style="background: grey; color: green;"> DETAİLS</h2>
         <p><div id="pbugatti">
@@ -320,7 +241,7 @@
         </div></p></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
         <p id="click">For more car click <em><a href="https://www.topspeed.com/cars/the-10-fastest-cars-in-the-world-ranked-ar188274.htmlhere">here</a></em></p>
-        
+   
 
     </body>
 <!-- My self-introduction video's link is.......... -->
