@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+	<head>        
+        <title>responsedenemeson</title>
+        <style>
+        /***** RESET *****/
+        html, body, div, span, applet, object,iframe, h1, h2,h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, 
+        small, strike, sub, sup, tt, var, b, u , i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+        legend, table, caption, tbody, tfoot, thead, tr, header, aside, nav, figure, section, footer, article 
+        {   margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;} 
+
+        html, body {height: 100%;}
+        body {line-height: 1;}
+        ol, ul {list-style: none;}
+        blockquote, q {quotes: none;}
+        blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+        table {border-collapse: collapse; border-spacing: 0;}  
+        textarea {overflow: auto;}
+
+        /*****RESET*****/
+
+        .container {width: 900px;
+                    height: auto;
+                    margin:10px auto;}
+
+        header {width: 900px;
+                height: 100px;}
+
+        header figure {width: 100px;
+                       height: 100px;
+                       float: left;
+                       text-align: center;
+                       font: 12px tahoma;
+					color:teal;}
+
+        header aside {width: 700px;
+                      height: 100px;                                         
+                      float: left;
+                      font: bold 32px tahoma;
+					  color:mediumseagreen;
+					  text-align: center;
+                      background: white; }
+        
+        .headerwrite     {width: 600px;
+			             height: 30px;
+						 font: bold 22px tahoma;
+					     color:mediumseagreen;
+						  
+                         float: left;}
+
+			
+
+		.search1       {width: 500px;
+			            height: 26px;						
+						background: #e7e2e2;
+						color: white;						
+						border: 1px solid grey;
+						border-radius: 15px 0 0 15px;
+						font: 14px tahoma;
+						color:rgb(74, 105, 146);
+						float: left;
+						margin: 5px 0 0 50px;
+						padding: 6px 5px 0 5px;
+						box-shadow: 5px 5px 15px #4f8f64;}
+
+		.search2    {width: 70px;
+				        height: 26px;						 
+						background: #816767;
+						color: white;						
+						border: 1px solid grey;
+						border-radius: 0 15px 15px 0;
+						font: 14px tahoma;
+						color:rgb(48, 44, 44);
+						float: left;
+						margin:5px 0 0 0;
+						padding: 6px 5px 0 5px;
+						border-left: none;}			
+			   
+
+		.search2:hover {background: #576975;}       
+
+
+        nav {width: 900px;
+			       height: 45px;
+				   margin: 0 10px 0 0; 
+				   float: left;
+				   background: rgb(221, 231, 221);}
+
+        aside {width: 200px;
+               height: auto;
+               margin: 5px 0 0 0;
+               float: left;}
+
+        .sidebarhead {width: 200px;
+			          height:40px;					  
+					  margin: 10px auto;
+					  font: 22px tahoma;
+					  color: rgb(67, 126, 67);					 
+					  text-align: center;}
+		
+
+		.shipsfree{width: 170px;			          
+				      margin: 0 auto;
+					  font:bold 12px tahoma;
+					  color: rgba(22, 24, 23);
+					  text-align: center;
+					  box-shadow: 5px 5px 15px #4f8f64;}
+
+		.addtocart {width: 95px;
+			             height: 20px;
+						 background: rgb(102, 143, 112);
+						 margin: 10px auto 20px auto; 
+						 text-align: center;
+						 font:bold 15px tahoma;
+						 color:rgb(48, 44, 44);
+						 padding: 2px 0 0 0;
+						 border: 2px solid rgb(48, 44, 44);
+						 border-radius: 5px;}
+
+		.addtocart:hover {background: rgb(57, 185, 111);}
+
+        main {width: 695px;
+              height: auto;
+               float: left;
+               margin: 5px 0 0 5px;
+               padding: 10px 0 0 0;} 
+
+        h1{  width: 695px;
+			 height:35px;
+			 background: #6da380;
+			 font:25px tahoma;
+			 color:rgb(215, 224, 215);
+			 text-align: center;
+			 padding: 5px 0 0 0;
+			margin: -5px 0 10px 0;
+            float: left;}    
+
+
+        h2 {font: bold 20px tahoma;
+			color:rgb(129, 139, 137);}   
+
+
+
+        main section article {width: 490px;
+                              height: auto;
+                              float: left;
+                              text-align:justify;
+					          font: 14px tahoma;
+					         color:rgb(129, 139, 137);
+                             margin:10px 0 5px 0;}
+
+        main section figure {width:200px;
+                             float: left;
+                             text-align: center;
+						font:bold 12px tahoma;
+						color: rgba(22, 24, 23);
+                        margin: 10px 0 15px 0;}
+
+        .addtocart1 {width: 95px;
+			             height: 20px;
+						 background: rgb(102, 143, 112);
+						 margin: 5px 0 0 45px; 
+						 text-align: center;
+						 font:bold 15px tahoma;
+						 color:rgb(48, 44, 44);
+						 padding: 2px 0 0 0;
+						 border: 2px solid rgb(48, 44, 44);
+						 border-radius: 5px;
+						 float:left;}
+
+			.addtocart1:hover {background: rgb(57, 185, 111);}
+            
+      
+
+         
+
+       
+
+
+        nav ul {margin: 0;
+			          padding: 0;			         
+					 list-style: none;
+					 background: rgb(221, 231, 221);}           
+
+
+        nav ul li {float: left;
+				    position: relative;}
+
+        nav ul li a {display:block;
+			               width:180px;
+						   height: 30px;
+						   text-decoration: none;
+						   text-align: center;
+						   font: 15px tahoma;
+						   color: rgb(67, 126, 67);
+						   padding: 15px 0 0 0;}
+
+        nav ul li a:hover {text-decoration: underline;
+			                     background: rgb(67, 126, 67);
+								 color:oldlace}
+
+        nav ul li ul {display: none;
+                         position: absolute;
+                         left: 0;
+                         top: 45px;}
+
+        nav ul li:hover ul {display: block;}
+ 
+
+        .films{width: 173px;
+               height: auto; 
+               float: left;
+               text-align: center;}
+
+        .line {width: 900px;
+			      height: 5px;
+				  background:rgb(155, 156, 175);
+				  margin: 10px auto;
+				  float: left;
+				  border-radius: 5px;}
+
+
+       footer {width:900px;
+			         height: 50px;
+					 background: #ffffff;
+					 float: left;
+					 margin: 10px 5px 10px 0;}
+
+			footer ul {margin: 0;
+    					padding: 0;			         
+   						list-style: none;}
+
+
+			footer ul li {float: left;
+      						position: relative;}
+
+			footer li a {display:table-caption;
+        				  width:120px;
+         				  height: 35px;
+         				  text-decoration: none;
+        				  text-align: center;
+         				  font: 15px tahoma;
+         				   color: rgb(155, 156, 175);
+        				 padding: 15px 10px 0 0;}
+
+			footer ul li a:hover {text-decoration: underline;
+               						background: rgb(155, 163, 155);
+               						color:oldlace}
+
+			
+
+			 .socialmedia2{ width: 250px;
+			            height: 50px;
+						background: #ffffff;
+						float: left; 
+						text-align: center;}
+                       
+
+        
+
+        		
+
+        
+
+        
+
+         </style>
+	</head>
+    
+	<body>
+        <div class="container">
+            <header>
+                <figure><img src="https://www.revbay.com/assets/resources/logo_400.png" width="100" height="100" alt="logo"></figure>
+                <aside><div class="headerwrite">YOU CHOOSE WE DELİVERY</div>			
+                    <div class="search1">Search by title, author, keyword or ISBN  <input></div>
+                    <div class="search2">Search</div>
+                     
+            
+                </aside>          
+                
+                <figure><img src="https://img2.pngindir.com/20180515/zfw/kisspng-shopping-cart-logo-shopping-bags-trolleys-5afb65b09c72d4.3564791415264250086408.jpg" width="100" height="80" alt="cart"> Cart is empty</figure>              
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="">Categories</a>
+                        <ul>
+                        <li><a href="">Biographies & Memoirs</a></li>
+                        <li><a href="">Literature & Fiction</a></li>
+                        <li><a href="">Education & References</a></li>
+                        <li><a href="">History</a></li>
+                        <li><a href="">Religion & Spirituality</a></li>
+                        <li><a href="">Mystery & Suspense</a></li>				
+                    </ul></li> 
+                    <li><a href="">Featured</a>
+                        <ul>
+                            <li><a href="">Pride Month</a></li>
+                            <li><a href="">Game Time</a></li>
+                            <li><a href="">Large Print Books</a></li>
+                            <li><a href="">Staff Picks</a></li>										
+                        </ul></li>  
+                    <li><a href="">Collectibles</a>
+                        <ul>
+                        <li><a href="">Travel</a></li>
+                        <li><a href="">Literary</a></li>
+                        <li><a href="">Military</a></li>					 
+                        <li><a href="">Religion</a></li>
+                        <li><a href="">Science</a></li>	
+                        <li><a href="">Humanities</a></li>	
+                        <li><a href="">Biographies</a></li>		
+                        <li><a href="">Social Sciences</a></li>			
+                    </ul></li>  
+                    <li><a href="">Movies&TV</a>
+                        <ul>
+                            <li><a href="">Animation</a></li>
+                            <li><a href="">Horror</a></li>
+                            <li><a href="">Sports</a></li>					 
+                            <li><a href="">Western</a></li>
+                            <li><a href="">Action</a></li>	
+                            <li><a href="">Drama</a></li>	
+                            <li><a href="">Romance</a></li>								
+                        </ul></li> 
+                    <li><a href=""><span style="font-weight:bolder">LOG IN</span></a>     
+                </ul>
+            </nav>
+             
+            <aside>                
+                <div class="sidebarhead">Ships Free</div>
+                <div class="shipsfree"> <img src="https://img.thriftbooks.com/api/images/m/5d592d3a3a3819baab5a7bc183a267b56d3b50a7.jpg" 
+                    alt="Rick Riordan" width="170"><br><br>Rick Riordan €5.99<br><br></div>				
+                <div class="addtocart">Add To Cart</div>
+                <div class="shipsfree"><img src="https://m.media-amazon.com/images/I/51LMQrK8uML._SL350_.jpg" 
+                    alt="Frank Herbert" width="170"><br><br>Frank Herbert €6.99<br><br></div>
+                <div class="addtocart">Add To Cart</div>
+                <div class="shipsfree"><img src="https://img.thriftbooks.com/api/images/m/e5f4afb5f809f0bbe7453ca4291362c57c2d7538.jpg" 
+                    alt="Tara Westover" width="170"><br><br>Tara Westover €7.99<br><br></div>
+                <div class="addtocart">Add To Cart</div>
+                <div class="shipsfree"><img src="https://img.thriftbooks.com/api/images/i/m/A7209320B024A5C93212FAD6992D64AD2C401396.jpg" 
+                    alt="Isabel Wilkerson" width="170"><br><br>Isabel Wilkerson €8.99<br><br></div>
+                <div class="addtocart">Add To Cart</div>
+                <div class="shipsfree"><img src="https://m.media-amazon.com/images/I/510O-JKoiBL._SL350_.jpg" 
+                    alt="J.R.R. Tolkien" width="170"><br><br>J.R.R. Tolkien €5.39<br><br></div>
+                <div class="addtocart">Add To Cart</div>
+                <div class="shipsfree"><img src="https://m.media-amazon.com/images/I/41LO6QRvIuL._SL350_.jpg" 
+                    alt="Malcolm Gladwell" width="170"><br><br>Malcolm Gladwell €4.60<br><br></div>
+                <div class="addtocart">Add To Cart</div>
+            </aside>
+            <main>
+                <section>
+                    <h1>Bestsellers</h1>
+                    <figure>
+                        <img src="https://img.thriftbooks.com/api/images/i/m/6E3E2015621F24DDC2A94F614AF468CD195766E3.jpg" width="180" alt="Ken Follett"> Ken Follett €12.35
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                    <article>                        
+                        <h2>Book Overview</h2>
+                        <p>From the New York Times bestselling author, a thrilling and addictive new novel--a prequel to The Pillars of the Earth--set in England at the dawn of a new era: the Middle Ages. It is 997 CE, the end of the Dark Ages. England is facing attacks from the Welsh in the west and the Vikings in the east. Those in power bend justice according to their will, regardless of ordinary people and often in conflict with the king. Without a clear rule of law, chaos reigns. In these turbulent times, three characters find their lives intertwined. A young boatbuilder's life is turned upside down when the only home he's ever known is raided by Vikings, forcing him and his family to move and start their lives anew in a small hamlet where he does not fit in. A Norman noblewoman marries for love, following her husband across the sea to a new land, but the customs of her husband's homeland are shockingly different, and as she begins to realize that everyone around her is engaged in a constant, brutal battle for power, it becomes clear that a single misstep could be catastrophic. A monk dreams of transforming his humble abbey into a center of learning that will be admired throughout Europe. And each in turn comes into dangerous conflict with a clever and ruthless bishop who will do anything to increase his wealth and power. Thirty years ago, Ken Follett published his most popular novel, The Pillars of the Earth. Now, Follett's masterful new prequel The Evening and the Morning, takes us on an epic journey into a historical past rich with ambition and rivalry, death and birth, love and hate, that will end where The Pillars of the Earth begins.
+                        </p>
+                    </article>                   
+                                   
+                    <figure>
+                        <img src="https://img.thriftbooks.com/api/images/m/1f2fda69ad6d7e43f38702a1a052fc986b58ab34.jpg" width="180" alt="Toni Morrison"> Toni Morrison €10.67
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                    <article>                        
+                        <h2>Book Overview</h2>
+                        <p>Nobel Laureate Toni Morrison comes the story of a young black girl who longs to be like the blond, blue-eyed children that America loves-a novel "so charged with pain and wonder that it becomes poetry" (The New York Times).
+                        </p>
+                    </article>                    
+                </section>
+
+                <section>
+                    <h1>Classics</h1>
+                    <figure>
+                        <img src="https://www.thriftbooks.com/cimage/1521381814/1.jpg" width="180" height="250" alt="George Orwell"> George Orwell €9.43
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                    <article>                        
+                        <h2>Book Overview</h2>
+                        <p>Fueled by Orwell's intense disillusionment with Soviet Communism, Animal Farm is a nearly perfect piece of writing, both an engaging story and an allegory that actually works. Everyone willingly works overtime, productivity soars, and for one brief, glorious season, every belly is full. The animals' Seven Commandment credo is painted in big white letters on the barn. All animals are equal. No animal shall drink alcohol, wear clothes, sleep in a bed, or kill a fellow four-footed creature. Those that go upon four legs or wings are friends and the two-legged are, by definition, the enemy. Too soon, however, the pigs, who have styled themselves leaders by virtue of their intelligence, succumb to the temptations of privilege and power. "We pigs are brainworkers. The whole management and organisation of the farm depend on us. Day and night, we are watching over your welfare. It is for your sake that we drink that milk and eat those apples." While this swinish brotherhood sells out the revolution, cynically editing the Seven Commandments to excuse their violence and greed, the common animals are once again left hungry and exhausted, no better off than in the days when humans ran the farm. Satire Animal Farm may be, but it's a stony reader who remains unmoved when the stalwart workhorse, Boxer, having given his all to his comrades, is sold to the glue factory to buy booze for the pigs. Orwell's view of Communism is bleak indeed, but given the history of the Russian people since 1917, his pessimism has an air of prophecy.
+                            </p>
+                    </article>                    
+                                   
+                    <figure>
+                        <img src="https://www.thriftbooks.com/cimage/828174960/1.jpg" width="180" height="250" alt="Anthony Burgess"> Anthony Burgess €12.15
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                    <article>                        
+                        <h2>Book Overview</h2>
+                        <p>The only American edition of the cult classic novel.A vicious fifteen-year-old "droog" is the central character of this 1963 classic, whose stark terror was captured in Stanley Kubrick's magnificent film of the same title. In Anthony Burgess's nightmare vision of the future, where criminals take over after dark, the story is told by the central character, Alex, who talks in a brutal invented slang that brilliantly renders his and his friends' social pathology. A Clockwork Orange is a frightening fable about good and evil, and the meaning of human freedom. When the state undertakes to reform Alex—to "redeem" him—the novel asks, "At what cost?" This edition includes the controversial last chapter not published in the first edition and Burgess's introduction "A Clockwork Orange Resucked.
+                            </p>
+                    </article>                    
+                </section>
+                <section >
+                    <h1>Films</h1>
+                    <div class="films">
+                    <figure><img src="https://m.media-amazon.com/images/I/51MnpyjVy9L._SL350_.jpg"  width="160" height="250" alt="Deepwater Horizon">Deepwater Horizon<br>DVD €5.99
+                        <div class="addtocart1">Add To Cart</div>                        
+                    </figure>
+                </div>
+                <div class="films">
+                    <figure><img src="https://m.media-amazon.com/images/I/51FtbH9DH2L._SL350_.jpg" width="160" height="250" alt="Star Wars"><br>Star Wars<br>Bluray/DVD €8.99
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                </div>
+                <div class="films">               
+                    <figure><img src="https://m.media-amazon.com/images/I/41rihPprdLL._SL350_.jpg"  width="160" height="250" alt="Jason Bourne"><br>Jason Bourne<br>Bluray €7.99
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                </div>
+                <div class="films">
+                    <figure><img src="https://m.media-amazon.com/images/I/4191V0QIFmL._SL350_.jpg"  width="160" height="250" alt="John Wick"><br>John Wick<br>DVD €6.99
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                </div>                  
+                </section>
+
+                <section >
+                    <h1>Childeren's</h1>
+                    <div class="films">
+                    <figure><img src="https://img.thriftbooks.com/api/images/m/950038863e7b7130eb9000d67f05c2eb32a00393.jpg"  width="160" height="250" alt="P.D. Eastman"><br>P.D. Eastman €3.50
+                        <div class="addtocart1">Add To Cart</div>                        
+                    </figure>
+                </div>
+                <div class="films">
+                    <figure><img src="https://m.media-amazon.com/images/I/51Lk7KuGpdL._SL350_.jpg" width="160" height="250" alt="Laura Joffe Numeroff"><br>Laura Joffe Numeroff €4.30
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                </div>
+                <div class="films">               
+                    <figure><img src="https://img.thriftbooks.com/api/images/m/5d0c93c310ad997ca213fffda0754b38c1ae9f0f.jpg"  width="160" height="250" alt="Dr. Seuss"><br>Dr. Seuss €4.60
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                </div>
+                <div class="films">
+                    <figure><img src="https://img.thriftbooks.com/api/images/m/561eaa9477486e61770f8b80631359adf73b1245.jpg"  width="160" height="250" alt="Margery Williams Bianco"><br>Margery Williams Bianco €5.15
+                        <div class="addtocart1">Add To Cart</div>
+                    </figure>
+                </div>                  
+                </section> 
+            </main>
+            <div class="line"></div>
+            <footer>
+                <ul>
+					<li><a href="">SUPPORT</a></li> 
+					<li><a href="">SHOP</a></li>  
+					<li><a href="">BLOG</a></li>
+					<li><a href="">ABOUT US</a></li>  
+					<li><a href="">CONTACT</a></li>  
+                </ul>
+                <div class="socialmedia2"><a href="https://www.facebook.com/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/124/124010.png" width="48" height="47" alt="facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6w0DLiRwSRpHZeQfEXAv1XS0I_TBygdXUig&usqp=CAU" width="44" height="47" alt="instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" width="50" height="47" alt="twitter"></a>
+                </div>
+            </footer>    
+           
+            
+        </div>
+	</body>
+</html>
